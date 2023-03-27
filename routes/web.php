@@ -16,22 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
-// Route::get('/contact', function () {
-//     return view('contact', ['name' => 'Alex']);
-// })->name('contact');
-
-// Route::view('/home', 'home', ['name' => 'Taylor']);
-
-// Route::get('/user/profile', function () {
-//     return 'hi';
-// })->name('profile');
 
 Route::get('/', [HomeController::class, 'show'])->name('home');
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 
 
-Route::post('/form',[FormController::class, 'show'])->name(('form'));
+Route::get('/form',[FormController::class, 'show'])->name('form');
+Route::post('/form',[FormController::class, 'show']);
+
+
