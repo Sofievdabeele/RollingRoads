@@ -1,7 +1,5 @@
-
-
-@include('header')
-   
+@extends('layouts.layout')
+@section('content')
     <div id="contact" class="container">
         <h3 class="text-center">Create User</h3>
         <p class="text-center"><em>Register Here</em></p>
@@ -62,4 +60,4 @@
             </form>
         </div>
     </div>
-@include('footer')    
+ @endsection

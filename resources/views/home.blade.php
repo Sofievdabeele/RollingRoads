@@ -1,4 +1,5 @@
-@include('header')
+@extends('layouts.layout')
+@section('content')
     <h1>Home</h1>
     <h2>About this Company</h2>
     <div class="about" >
@@ -37,7 +38,5 @@
         Nulla voluptatem fugiat sint, maiores aspernatur impedit rerum iste quam ipsam harum? </p>
         </div>
 
-    </div>
-    <a href="{{route('contact')}}">Contact</a>
-   
-@include('footer')  
+    </div>  
+@endsection
