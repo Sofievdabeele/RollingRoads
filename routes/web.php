@@ -21,7 +21,7 @@ Route::get('/', [HomeController::class, 'show'])->name('home');
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 
 
-Route::get('/form',[FormController::class, 'show'])->name('form');
-Route::post('/form',[FormController::class, 'show']);
+Route::get('/form',[FormController::class, 'create'])->name('form');
+Route::post('/form/save',[FormController::class, 'store'])->name('form.store');
 
 

@@ -14,3 +14,9 @@
     <a href="{{route('contact')}}">Contact</a>
     <a href="{{route('form')}}">Form</a>
     </header>
+    @yield('header')
+
+    @yield('content')
+    @yield('footer')
+
+</body>

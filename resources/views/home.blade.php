@@ -1,6 +1,3 @@
-
-
-<body>
 @include('header')
     <h1>Home</h1>
     <h2>About this Company</h2>
@@ -44,5 +41,3 @@
     <a href="{{route('contact')}}">Contact</a>
    
 @include('footer')  
-</body>
-</html>
