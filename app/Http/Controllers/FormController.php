@@ -7,14 +7,16 @@ use App\Http\Requests\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
+use App\Models\Article;
+
 class FormController extends Controller
 {
-    public function create() 
+    public function show() 
     {
         return view ('form');
     }
 
-    public function store(FormDataRequest $request)
+    public function store(FormDataRequest $request) 
     {
         // $request->validate([
         //     'fname' => 'required',
@@ -39,20 +41,20 @@ class FormController extends Controller
         // if($validate->fails()){
         //     return back()->withErrors($validate->errors())->withInput();
         // }
-        $validate = $request->validated();
+        // $validate = $request->validated();
 
         // dump all inside controller
         // dd($request->all());
 
-        $fname = $request->input('fname');        
-        $message = $request->input('message');
+        $article = new Article;
+        $article->name = $request->input('name');
+        $article->email = $request->input('email');
+        $article->password = $request->input('password');
+        $article->country = $request->input('country');
+        $article->article = $request->input('message');
 
-        return view('thankyou', [
-            'fname' => $fname, 
-            'message' => $message
-        ]);
-        // return view ('home');
+        $article->save();
         
-        
+        return redirect('/article')->with('status', 'Article has been inserted');      
     }
 }

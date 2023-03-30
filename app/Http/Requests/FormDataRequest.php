@@ -22,8 +22,8 @@ class FormDataRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'fname' => 'required|string',
-            'lname' => 'required|string|min:5',
+            'name' => 'required|string|min:5',
+            'country' => 'required|string',
             'email' => 'required|email',
             'password' => 'required',
             'message' => 'required|string|max:1000'
@@ -31,12 +31,12 @@ class FormDataRequest extends FormRequest
     }
     public function messages(): array
     {
-        return [
-            'fname.required' => 'First name is required',
-            'fname.string' => 'First name should only contain letters',            
-            'lname.required' => 'Last name is required',
-            'lname.string' => 'Last name should only contain letters',            
-            'lname.min' => 'Last name should have at least 5 characters',
+        return [      
+            'name.required' => 'Name is required',
+            'name.string' => 'Name should only contain letters',            
+            'name.min' => 'Name should have at least 5 characters',
+            'country.required' => 'Please provide a country',
+            'country.string' => 'Please provide a country',
             'email.required' => 'Please provide a valid email address',
             'email.email' => 'Please provide a valid email address',
             'password.required' => 'Please provide a password',

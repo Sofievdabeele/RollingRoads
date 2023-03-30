@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     <div id="contact" class="container">
-        <h3 class="text-center">Create User</h3>
+        <h3 class="text-center">Fill in to join our blog</h3>
         <p class="text-center"><em>Register Here</em></p>
 
         <div class="row">
@@ -13,26 +13,28 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="fname" name="fname" placeholder="First Name" type="text" value="{{old('fname')}}">
-                            @error('fname')
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" value="{{old('name')}}">
+                            @error('name')
                             <span class="text-danger">{{$message}}</span>
                             @enderror
                         </div>
 
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="lname" name="lname" placeholder="Last Name" type="text" value="{{old('lname')}}">
-                            @error('lname')
+                            <input class="form-control" id="country" name="country" placeholder="Country" type="text" value="{{old('country')}}">
+                            @error('country')
                             <span class="text-danger">{{$message}}</span>
                             @enderror
                         </div>
+                    </div>
                     
-                        </div>
+                    <div class="row">
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" value="{{old('email')}}">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email">
                             @error('email')
                             <span class="text-danger">{{$message}}</span>
                             @enderror
                         </div>
+
 
                         <div class="col-sm-6 form-group">
                             <input class="form-control" id="password" name="password" placeholder="Password" type="password">
@@ -43,8 +45,8 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <textarea class="form-control" id="message" name="message" placeholder="Please fill in any questions or remarks" value="{{old('message')}}"></textarea>
+                        <div class="col-sm-12 form-group">
+                            <textarea class="form-control" id="message" name="message" placeholder="Tell us about your experience with van travel" value="{{old('message')}}"></textarea>
                             @error('message')
                             <span class="text-danger">{{$message}}</span>
                             @enderror
@@ -53,11 +55,13 @@
 
                     <div class="row">
                         <div class="col-md-12 form-group">
-                            <button class="btn pull-right" type="submit">Send</button>
+                            <button class="btn btn-secondary" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
+       <p>We look forward to hearing from you!</p>
+       <a href="{{route('home')}}">Go home</a>
     </div>
  @endsection

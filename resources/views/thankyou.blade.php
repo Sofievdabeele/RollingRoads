@@ -1,4 +1,6 @@
-@include('header')
-<h1>Thank you for registering {{ $fname }}</h1>
+@extends('layouts.layout')
+@section('content')
+<h1>Thank you for registering {{ $name }}</h1>
 <p>{{ $message }}</p>
-@include('footer')  
+<a href="{{route('article')}}">Go back to blog</a>
+@endsection
