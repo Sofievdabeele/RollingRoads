@@ -4,7 +4,7 @@
     <h2>Rolling Roads</h2>
     <div class="about" >
         <div class="who">
-            <img src="/Images/vantravel.jpg" alt="photo of a van travel">
+            <img src="{{ asset("./Images/vantravel.jpg") }}" alt="photo of a van travel">
             <h3>Who we are</h3>
             <p>We are travel enthusiasts who have chosen to embrace the freedom of the open road. Our passion for adventure has led us to explore the world from the comfort of our trusty van, and we're always excited to share our experiences with others.
                 We believe that traveling with a van is a unique and fulfilling way to experience the world. It allows us to immerse ourselves in the natural beauty of each destination, connect with locals, and create unforgettable memories along the way.

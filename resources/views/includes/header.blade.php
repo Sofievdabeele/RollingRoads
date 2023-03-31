@@ -8,6 +8,7 @@
              <li class="nav-item active"><a class="nav-link" href="{{route('contact')}}">Contact</a></li>
              <li class="nav-item active"><a class="nav-link" href="{{route('form')}}">Form</a></li>
              <li class="nav-item active"><a class="nav-link" href="{{route('article')}}">Blog</a></li>
+             <li class="nav-item active"><a class="nav-link" href="{{route('member')}}">Members</a></li>
 
          </ul>
     </div>

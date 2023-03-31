@@ -4,6 +4,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,8 @@ Route::post('/form-save',[FormController::class, 'store'])->name('form.store');
 
 
 Route::get('/article', [ArticleController::class, 'show'])->name('article');
+
+Route::get('/member',[MemberController::class, 'show'])->name('member');
 
 
 
