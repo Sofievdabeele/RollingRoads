@@ -27,9 +27,10 @@ Route::get('/form',[FormController::class, 'show'])->name('form');
 Route::post('/form-save',[FormController::class, 'store'])->name('form.store');
 
 
-Route::get('/article', [ArticleController::class, 'show'])->name('article');
+Route::get('/articles', [ArticleController::class, 'show'])->name('articles');
 
 Route::get('/member',[MemberController::class, 'show'])->name('member');
 
+Route::get('/articles/{article}', [ArticleController::class, 'showDetail'])->name('article');
 
 

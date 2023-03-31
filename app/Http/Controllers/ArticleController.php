@@ -11,7 +11,13 @@ class ArticleController extends Controller
     
     {
         $articles = Article::all();
-        return view ('article',["articles"=>$articles]);
+        return view ('articles',["articles"=>$articles]);
+    }
+
+    public function showDetail(Article $article)
+    
+    {
+        return view ('article',["article"=>$article]);
     }
 }
 

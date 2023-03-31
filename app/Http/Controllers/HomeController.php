@@ -12,8 +12,8 @@ class HomeController extends Controller
     public function show()
     {
   
-         Debugbar::startMeasure('Woohoo', 'Rendering first message' );
-        
+        Debugbar::startMeasure('Woohoo', 'Rendering first message' );
+        clock()->info('info');
         return view ('home');
     }
 }
