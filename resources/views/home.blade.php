@@ -1,10 +1,32 @@
 @extends('layouts.layout')
 @section('content')
-    <h1>Home: Travel Blog</h1>
-    <h2>Rolling Roads</h2>
+    <h1>Rolling Roads</h1>
+    <h2>A travel Blog</h2>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{asset("./Images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg")}}" class="d-block w-100" alt="van travel">
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset("./Images/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg")}}" class="d-block w-100" alt="on the water">
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset("./Images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg")}}" class="d-block w-100" alt="on a lake">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <div class="about" >
         <div class="who">
-            <img src="{{ asset("./Images/vantravel.jpg") }}" alt="photo of a van travel">
+            
             <h3>Who we are</h3>
             <p>We are travel enthusiasts who have chosen to embrace the freedom of the open road. Our passion for adventure has led us to explore the world from the comfort of our trusty van, and we're always excited to share our experiences with others.
                 We believe that traveling with a van is a unique and fulfilling way to experience the world. It allows us to immerse ourselves in the natural beauty of each destination, connect with locals, and create unforgettable memories along the way.

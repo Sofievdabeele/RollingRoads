@@ -13,7 +13,7 @@ class FormController extends Controller
 {
     public function show() 
     {
-        return view ('form');
+        return view ('register');
     }
 
     public function store(FormDataRequest $request) 
@@ -27,6 +27,6 @@ class FormController extends Controller
 
         $article->save();
         
-        return redirect('/article')->with('status', 'Article has been inserted');      
+        return redirect('/articles')->with('status', 'Article has been inserted');      
     }
 }

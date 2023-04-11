@@ -23,8 +23,8 @@ Route::get('/', [HomeController::class, 'show'])->name('home');
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 
 
-Route::get('/form',[FormController::class, 'show'])->name('form');
-Route::post('/form-save',[FormController::class, 'store'])->name('form.store');
+Route::get('/register',[FormController::class, 'show'])->name('register');
+Route::post('/register-save',[FormController::class, 'store'])->name('register.store');
 
 
 Route::get('/articles', [ArticleController::class, 'show'])->name('articles');
