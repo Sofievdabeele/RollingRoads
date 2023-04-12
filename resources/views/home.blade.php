@@ -27,7 +27,7 @@
       </div>
 
     <div class="container mx-5 my-4 d-flex" >
-      <div class="container"></div>
+      
         <div>
           <h3 class="text-uppercase">Who we are</h3>
           <p class="w-75" style="text-align: justify">We are travel enthusiasts who have chosen to embrace the freedom of the open road. Our passion for adventure has led us to explore the world from the comfort of our trusty van, and we're always excited to share our experiences with others.
@@ -43,6 +43,6 @@
               In addition to sharing our travel stories and recommendations, we want to create a community of van travelers who can connect, share resources, and support each other in their adventures. We hope to foster a positive and inclusive space where everyone can feel welcome and inspired to pursue their own van travel dreams.
               Overall, our blog is a platform for sharing our passion for van travel and encouraging others to join us on this incredible journey.</p>
         </div>
-      </div>
+      
     </div>  
 @endsection
